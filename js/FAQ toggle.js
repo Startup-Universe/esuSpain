@@ -21,3 +21,7 @@ function hideNonVisibleDivs() {
     }
   }
 }
+
+$(".rotate").click(function () {
+    $(this).toggleClass("down");
+})

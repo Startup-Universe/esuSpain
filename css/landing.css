@@ -198,6 +198,16 @@ hr {
     }
 }
 
+#newsletter{
+  width: inherit;
+  border: 2px solid #f40654;
+  height: 60px;
+  color: white;
+  background-color: #00008b;
+  padding: 15px 25px;
+}
+
+
 .rotate {
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;

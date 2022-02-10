@@ -218,3 +218,92 @@ hr {
     -webkit-transform:rotate(90deg);
     transform:rotate(90deg);
 }
+
+
+.bcontainer {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bimage {
+  opacity: 1;
+  display: block;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.bmiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bcontainer:hover .bimage {
+  opacity: 0.3;
+  background-color: white;
+}
+
+.bcontainer:hover .bmiddle {
+  opacity: 1;
+}
+
+.btext {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  color:#f40654;
+  font-size: 15px;
+  padding: 2px 3px;
+}
+
+.grow {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color:white;
+  border-radius: 15px;
+  box-shadow: 2px 1px 20px 10px #f40654;
+  padding-left: 70px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gcolumn {
+  flex: 25%;
+  max-width: 25%;
+  margin: 6px 6px;
+}
+
+.gcolumn img {
+  margin-top: 4px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px 3px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

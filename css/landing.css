@@ -380,3 +380,17 @@ hr {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+.raise{
+  background-color: inherit;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.raise:hover, .raise:focus {
+  box-shadow: 2px 1px 10px 5px #00ffff;
+  transform: translateY(-0.25em);
+  border-radius: 10px;
+}
